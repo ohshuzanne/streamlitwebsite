@@ -6,4 +6,4 @@
 ![contactme](https://github.com/ohshuzanne/streamlitwebsite/blob/main/screenshots/contactme.png?raw=true)
 
 ##View the website
-https://shu-portfolio.streamlit.app/
+[Click me](https://shu-portfolio.streamlit.app/)
