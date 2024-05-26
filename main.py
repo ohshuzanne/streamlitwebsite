@@ -22,8 +22,8 @@ def lottie_loader(url):
         return None
     return getReq.json()
 
-def run_snow_animation():
-    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+def run_star_animation():
+    rain(emoji="⭐", font_size=20, falling_speed=8, animation_length="infinite")
 
 #css styling
 def my_css(file):
@@ -35,10 +35,13 @@ my_css("style/style.css")
 
 #assets
 lottie_polyfox = "https://lottie.host/f8f6abbe-7797-48cb-9d72-e3f006de0987/kzrdAgrilI.json"
+lottie_astronaut ="https://lottie.host/56920f62-43b5-46c4-b76c-0180d864bcc5/0yOK9N76we.json"
+lottie_planets ="https://lottie.host/d36df55b-b3fa-4abf-a0da-dc1c54d2b58e/VpN4Bothtq.json"
+
 img_savvy = Image.open("image_assets/1.png")
 img_kitajom = Image.open("image_assets/KitaJombanner.png")
 
-run_snow_animation()
+run_star_animation()
 
 
 #header
@@ -65,8 +68,15 @@ with st.container():
                  accessible, something that is reflected in a lot of my projects.
                  
                  """)
+        st.write("""
+
+                I'm a very fun loving person, and I believe nothing good or creative ever comes out of being too
+                serious. When I'm not at school organizing my nth event, I'm probably joining
+                hackathons with my friends!
+                
+                 """)
     with right_section:
-        st_lottie(lottie_polyfox, height = 250, key="polyfox")
+        st_lottie(lottie_astronaut, height = 300, key="astronaut")
 
 #projects
 with st.container():
@@ -122,4 +132,4 @@ with st.container():
     with left_section:
         st.markdown(contact_form, unsafe_allow_html= True)
     with right_section:
-        st.empty()
+        st_lottie(lottie_polyfox, height = 250, key="polyfox")
