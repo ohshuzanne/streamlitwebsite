@@ -25,6 +25,12 @@ input[type=message], input[type=email], input[type=text], textarea {
     background-color: #7c41fc;
   }
   
+  .rounded-image{
+    border-radius: 15px;
+    overflow:hidden;
+    display: block;
+    margin: 0 auto;
+  }
   
   /* Hide Streamlit Branding */
   #MainMenu {visibility: hidden;}
