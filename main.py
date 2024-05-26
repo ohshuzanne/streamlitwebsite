@@ -2,11 +2,13 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
 from PIL import Image
+from streamlit_extras.let_it_rain import rain
 
 #set up the page's configurations like sidebars and stuff
 #emoji website is on webfx emoji cheat sheets or sumn like that
 #default layout is centered, but wide makes it take up the whole screen width
 st.set_page_config(page_title="Shu's Website", page_icon = ":cookie:", layout="wide", )
+
 
 #functions
 def lottie_loader(url):
@@ -14,6 +16,9 @@ def lottie_loader(url):
     if getReq.status_code != 200:
         return None
     return getReq.json()
+
+def run_snow_animation():
+    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
 
 #css styling
 def my_css(file):
@@ -26,6 +31,8 @@ my_css("style/style.css")
 lottie_polyfox = "https://lottie.host/f8f6abbe-7797-48cb-9d72-e3f006de0987/kzrdAgrilI.json"
 img_savvy = Image.open("image_assets/1.png")
 img_kitajom = Image.open("image_assets/KitaJombanner.png")
+
+run_snow_animation()
 
 #header
 with st.container():
