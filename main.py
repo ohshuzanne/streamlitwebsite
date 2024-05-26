@@ -58,11 +58,11 @@ with st.container():
         st.header("About me")
         st.write("""
                  
-                 Here's a summary of what I do:
-                 - I play Valorant. A lot of it
-                 - Making technology accessible is incredibly important to me
-                 - Bionics engineering is a deeply rooted passion of mine
-                 - I'm proficient in Python, Java, and Dart
+                 Most of my free time is spent unwinding and relaxing by playing a good ol' game of Valorant,
+                 the rest is used up on actual programming and learning. My "obsession" with technology
+                 started when I first discovered Bionics Computing and how impactful it is on the lives
+                 of millions who are overlooked on a daily basis. My mission is to make tech purposeful and
+                 accessible, something that is reflected in a lot of my projects.
                  
                  """)
     with right_section:
